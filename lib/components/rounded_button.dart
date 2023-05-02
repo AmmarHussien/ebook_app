@@ -20,33 +20,31 @@ class RoundedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: GestureDetector(
-        onTap: () {
-          press();
-        },
-        child: Container(
-          alignment: Alignment.center,
-          margin: const EdgeInsets.symmetric(
-            vertical: 16,
-          ),
-          padding: EdgeInsets.symmetric(
-            vertical: verticalPadding,
-            horizontal: horizontalPadding,
-          ),
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(30),
-            boxShadow: [
-              kBoxShadowWelcomPage,
-            ],
-          ),
-          child: Text(
-            text,
-            style: TextStyle(
-              fontSize: fontSize,
-              fontWeight: FontWeight.bold,
-            ),
+    return GestureDetector(
+      onTap: () {
+        press();
+      },
+      child: Container(
+        alignment: Alignment.center,
+        margin: const EdgeInsets.symmetric(
+          vertical: 16,
+        ),
+        padding: EdgeInsets.symmetric(
+          vertical: verticalPadding,
+          horizontal: horizontalPadding,
+        ),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(30),
+          boxShadow: [
+            kBoxShadowWelcomPage,
+          ],
+        ),
+        child: Text(
+          text,
+          style: TextStyle(
+            fontSize: fontSize,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),

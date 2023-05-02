@@ -38,7 +38,7 @@ class RoundedButton extends StatelessWidget {
             color: Colors.white,
             borderRadius: BorderRadius.circular(30),
             boxShadow: [
-              kBoxShadow,
+              kBoxShadowWelcomPage,
             ],
           ),
           child: Text(
